@@ -33,8 +33,32 @@ elSubTotal.textContent = '$' + subTotal;
 var elShipping = document.getElementById ('shipping');
 elShipping.textContent = '$' + shipping;
 
-
+// Get the element for grandTotal
 var elgrandTotal = document.getElementById ('grandTotal');
 elgrandTotal.textContent = grandTotal
+
+
+
+var msg = 'Sign up to receive a newsletter for 10% off!';
+function updateMessage () {
+    var el = document.getElementById ('message');
+    el.textContent = msg;
+}
+updateMessage ();
+
+
+function getSize (height, width, depth) {
+    var area = width * height;
+    var volume = width * height * depth;
+    var sizes = [area, volume];
+    return sizes;
+}
+
+var areaOne = getSize (3,2,3) [0];
+var volumeOne = getSize (3,2,3)[1];
+
+
+
+
 
 
